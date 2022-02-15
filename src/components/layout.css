@@ -1,0 +1,113 @@
+/* RESET */
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  /* list-style: none; */
+  border: 0;
+}
+
+:root {
+  /* COLORS  */
+
+  --primary: #800080;
+  --primaryB: #c154c1;
+  --secondary: #03bb85;
+  --secondaryB: #7fffd4;
+  --terciary: #fff;
+
+  /* grey */
+  --grey-0: #fafbfc;
+  --grey-50: #f2f4f8;
+  --grey-100: #eaedf3;
+  --grey-200: #e2e7ef;
+  --grey-300: #dbe0ea;
+  --grey-400: #d3dae6;
+  --grey-500: #cbd3e1;
+  --grey-600: #adb3bf;
+  --grey-700: #8e949e;
+  --grey-800: #70747c;
+  --grey-900: #51545a;
+  --grey-1000: #333538;
+  --grey-1100: #141516;
+
+  /* rest */
+  --black: #222;
+  --red-light: #ff0000;
+  --red-dark: #842029;
+  --green-light: #d1e7dd;
+  --green-dark: #0f5132;
+  /* box shadows */
+  --shadow-1: 3px 5px 3px #aaa;
+  --shadow-2: 3px 5px 3px #222;
+
+  /* typography */
+  --defaultFontSize: 87.5%;
+  /*--headingFont: "Inconsolata", monospace;*/
+  /*--bodyFont: "Montserrat", sans-serif;*/
+  --smallText: 0.8em;
+  --extraSmallText: 0.7em;
+  /* rest */
+  --backgroundColor: var(--bgColor);
+  --textColor: var(--primary);
+  --borderRadius: 0.25rem;
+  --letterSpacing: 1px;
+  --transition: 0.3s ease-in-out all;
+  --max-width: 1120px;
+  --fixed-width: 600px;
+}
+html {
+  font-size: var(--defaultFontSize);
+  font-family: "Assistant", sans-serif;
+  color: var(--black);
+  background-color: var(--ice);
+  scroll-behavior: smooth;
+}
+@media only screen and (min-width: 576px) {
+  :root {
+    --defaultFontSize: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  :root {
+    --defaultFontSize: 112.5%;
+  }
+}
+
+/* bootstrap */
+
+.btn-primary,
+.btn {
+  background-color: var(--secondary) !important;
+  border-color: var(--primary) !important;
+  color: var(--terciary);
+}
+.navbar {
+  background-color: var(--terciary) !important;
+}
+.navbar-text {
+  color: var(--secondary) !important;
+}
+.navbar-nav .nav-link {
+  color: var(--primary) !important;
+  font-size: smaller;
+}
+.navbar-nav .nav-link:hover {
+  color: var(--secondary) !important;
+  /* background-color: var(--secondaryB) !important; */
+}
+/* bootstrap */
+
+/* tags */
+header {
+  box-shadow: 0px 1px 5px var(--primary);
+  color: var(--terciary);
+}
+span,
+a {
+  color: var(--terciary);
+}
+/* tags */
