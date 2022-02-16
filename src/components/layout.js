@@ -1,7 +1,8 @@
-import * as React from "react"
+import * as React from "react";
 
-import Header from "./header"
-import "./layout.css"
+import Header from "./header";
+import Footer from "./footer";
+import "./layout.css";
 
 const Layout = ({ children }) => {
   return (
@@ -9,10 +10,10 @@ const Layout = ({ children }) => {
       <Header />
       <div>
         <main>{children}</main>
-        <footer>&copy; {new Date().getFullYear()}, Mediação</footer>
       </div>
+      <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
