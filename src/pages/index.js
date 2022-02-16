@@ -1,33 +1,28 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+// 15.02.2022
+// Chegamos ontem de viagem do Rio. Eu com bastante catarro, ouvidos entupidos, moco moco, Susi amolecendo e Diana tb.
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import * as React from "react";
+import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 
-import "bootstrap/dist/css/bootstrap.min.css"
+import Layout from "../components/layout";
+import Seo from "../components/seo";
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import "animate.css";
+import "aos/dist/aos.css";
+import AOS from "aos";
+
+import { Container } from "react-bootstrap";
+AOS.init();
 
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["auto", "webp", "avif"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link> <br />
-      <Link to="/using-ssr">Go to "Using SSR"</Link> <br />
-      <Link to="/using-dsg">Go to "Using DSG"</Link>
-    </p>
+    <Container>
+      <h1 data-aos="zoom-in">Home page</h1>
+    </Container>
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;

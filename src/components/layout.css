@@ -41,9 +41,11 @@
   --green-light: #d1e7dd;
   --green-dark: #0f5132;
   /* box shadows */
-  --shadow-1: 3px 5px 3px #aaa;
-  --shadow-2: 3px 5px 3px #222;
-
+  --shadow-1: 3px 5px 3px #800080;
+  --shadow-2: 3px 5px 3px #03bb85;
+  /* tex shadows */
+  --shadowT-1: 0px 2px 2px #800080;
+  --shadowT-2: 0px 2px 2px #03bb85;
   /* typography */
   --defaultFontSize: 87.5%;
   /*--headingFont: "Inconsolata", monospace;*/
@@ -76,7 +78,10 @@ html {
     --defaultFontSize: 112.5%;
   }
 }
-
+.card-img-top {
+  max-height: 80vh; /*not want to take all vertical space*/
+  object-fit: contain; /*show all image, autosized, no cut, in available space*/
+}
 /* bootstrap */
 
 .btn-primary,
@@ -84,6 +89,11 @@ html {
   background-color: var(--secondary) !important;
   border-color: var(--primary) !important;
   color: var(--terciary);
+}
+.btn-primary:hover,
+.btn:hover {
+  background-color: var(--primary) !important;
+  border-color: var(--secondary) !important;
 }
 .navbar {
   background-color: var(--terciary) !important;
@@ -99,6 +109,28 @@ html {
   color: var(--secondary) !important;
   /* background-color: var(--secondaryB) !important; */
 }
+.card {
+  width: 75%;
+  margin: 1rem auto;
+}
+@media only screen and (max-width: 456px) {
+  .card {
+    width: 90%;
+  }
+}
+.card-body {
+  background-color: var(--secondary);
+  border-radius: var(--borderRadius);
+  color: var(--terciary);
+  box-shadow: var(--shadow-1);
+}
+.card-body a {
+  color: var(--terciary);
+}
+
+.navbar-toggler {
+  color: var(--primary) !important;
+}
 /* bootstrap */
 
 /* tags */
@@ -110,4 +142,14 @@ span,
 a {
   color: var(--terciary);
 }
+h1 {
+  text-align: center;
+  padding: 1rem;
+  color: var(--secondary);
+  text-transform: capitalize;
+  text-shadow: var(--shadowT-1);
+}
+/* img {
+  max-height: 600px;
+} */
 /* tags */
