@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Equipe Mediação`,
+    title: `Mediação`,
     description: `Site da Equipe de Intervenção Intensiva ABA: Mediação`,
     author: `@teufel8`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
@@ -20,8 +20,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `mediação`,
+        short_name: `mediação`,
         start_url: `/`,
         background_color: `#800080`,
         // This will impact how browsers show your PWA/website
@@ -35,4 +35,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};

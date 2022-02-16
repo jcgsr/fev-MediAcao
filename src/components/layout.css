@@ -13,11 +13,12 @@
 :root {
   /* COLORS  */
 
-  --primary: #800080;
+  --primary: #a963a9;
   --primaryB: #c154c1;
-  --secondary: #03bb85;
+  --secondary: #0aa1a8;
   --secondaryB: #7fffd4;
   --terciary: #fff;
+  --fourth: #869bac;
 
   /* grey */
   --grey-0: #fafbfc;
@@ -43,9 +44,11 @@
   /* box shadows */
   --shadow-1: 3px 5px 3px #800080;
   --shadow-2: 3px 5px 3px #03bb85;
+  --shadow-3: 5px 7px 3px #869bac;
   /* tex shadows */
   --shadowT-1: 0px 2px 2px #800080;
   --shadowT-2: 0px 2px 2px #03bb85;
+  --shadowT-3: 1px 3px 2px #869bac;
   /* typography */
   --defaultFontSize: 87.5%;
   /*--headingFont: "Inconsolata", monospace;*/
@@ -107,7 +110,6 @@ html {
 }
 .navbar-nav .nav-link:hover {
   color: var(--secondary) !important;
-  /* background-color: var(--secondaryB) !important; */
 }
 .card {
   width: 75%;
@@ -122,7 +124,7 @@ html {
   background-color: var(--secondary);
   border-radius: var(--borderRadius);
   color: var(--terciary);
-  box-shadow: var(--shadow-1);
+  box-shadow: var(--shadow-3);
 }
 .card-body a {
   color: var(--terciary);
@@ -147,7 +149,7 @@ h1 {
   padding: 1rem;
   color: var(--secondary);
   text-transform: capitalize;
-  text-shadow: var(--shadowT-1);
+  text-shadow: var(--shadowT-3);
 }
 footer {
   background-color: var(--primary);
