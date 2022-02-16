@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useEffect } from "react";
 
 import Layout from "../components/layout";
 import Seo from "../components/seo";
