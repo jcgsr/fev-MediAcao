@@ -9,6 +9,15 @@
   /* list-style: none; */
   border: 0;
 }
+html,
+body {
+  font-size: var(--defaultFontSize);
+  font-family: var(--ff);
+  color: var(--black);
+  background-color: var(--ice);
+  scroll-behavior: smooth;
+  line-height: var(--lh);
+}
 
 :root {
   /* COLORS  */
@@ -48,13 +57,13 @@
   /* tex shadows */
   --shadowT-1: 0px 2px 2px #800080;
   --shadowT-2: 0px 2px 2px #03bb85;
-  --shadowT-3: 1px 3px 2px #869bac;
+  --shadowT-3: 1px 2px 2px #869bac;
   /* typography */
-  --defaultFontSize: 87.5%;
+  --defaultFontSize: 14px;
   /*--headingFont: "Inconsolata", monospace;*/
   /*--bodyFont: "Montserrat", sans-serif;*/
-  --smallText: 0.8em;
-  --extraSmallText: 0.7em;
+  --smallText: 8px;
+  --extraSmallText: 6px;
   /* rest */
   --backgroundColor: var(--bgColor);
   --textColor: var(--primary);
@@ -63,24 +72,10 @@
   --transition: 0.3s ease-in-out all;
   --max-width: 1120px;
   --fixed-width: 600px;
+  --ff: Verdana, Geneva, sans-serif;
+  --lh: 1.618;
 }
-html {
-  font-size: var(--defaultFontSize);
-  font-family: "Assistant", sans-serif;
-  color: var(--black);
-  background-color: var(--ice);
-  scroll-behavior: smooth;
-}
-@media only screen and (min-width: 576px) {
-  :root {
-    --defaultFontSize: 100%;
-  }
-}
-@media only screen and (min-width: 768px) {
-  :root {
-    --defaultFontSize: 112.5%;
-  }
-}
+
 .card-img-top {
   max-height: 80vh; /*not want to take all vertical space*/
   object-fit: contain; /*show all image, autosized, no cut, in available space*/
@@ -92,6 +87,7 @@ html {
   background-color: var(--secondary) !important;
   border-color: var(--primary) !important;
   color: var(--terciary);
+  font-family: var(--ff);
 }
 .btn-primary:hover,
 .btn:hover {
@@ -114,6 +110,10 @@ html {
 .card {
   width: 75%;
   margin: 1rem auto;
+  font-family: var(--ff);
+  font-size: var(--defaultFontSize);
+  line-height: var(--lh);
+  max-width: 60ch;
 }
 @media only screen and (max-width: 456px) {
   .card {
@@ -125,6 +125,7 @@ html {
   border-radius: var(--borderRadius);
   color: var(--terciary);
   box-shadow: var(--shadow-3);
+  font-family: var(--ff);
 }
 .card-body a {
   color: var(--terciary);
@@ -139,6 +140,7 @@ html {
 header {
   box-shadow: 0px 1px 5px var(--primary);
   color: var(--terciary);
+  font-family: var(--ff);
 }
 span,
 a {
@@ -150,12 +152,14 @@ h1 {
   color: var(--secondary);
   text-transform: capitalize;
   text-shadow: var(--shadowT-3);
+  font-family: var(--ff);
 }
 footer {
   background-color: var(--primary);
   padding: 0.75rem;
   color: var(--terciary);
   text-align: center;
+  font-family: var(--ff);
 }
 /* tags */
 
