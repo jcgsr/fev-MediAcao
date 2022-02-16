@@ -1,7 +1,7 @@
 // 15.02.2022
 // Chegamos ontem de viagem do Rio. Eu com bastante catarro, ouvidos entupidos, moco moco, Susi amolecendo e Diana tb.
 
-import * as React from "react";
+import React, { useEffect } from "react";
 import { StaticImage } from "gatsby-plugin-image";
 
 import Layout from "../components/layout";
@@ -14,23 +14,41 @@ import AOS from "aos";
 
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
-AOS.init();
 
-const IndexPage = () => (
-  <Layout>
-    <Seo title="Home" />
-    <Container id="logo">
-      <Col>
-        <StaticImage
-          src="../images/mediacao-subtitulo.png"
-          quality={95}
-          width={600}
-          alt="A Gatsby astronaut"
-          placeholder="blurred"
-        />
-      </Col>
-    </Container>
-  </Layout>
-);
+const IndexPage = () => {
+  useEffect(() => {
+    /**
+     * Server-side rendering does not provide the 'document' object
+     * therefore this import is required either in useEffect or componentDidMount as they
+     * are exclusively executed on a client
+     */
+    const AOS = require("aos");
+    AOS.init({
+      once: true,
+    });
+  }, []);
+
+  useEffect(() => {
+    if (AOS) {
+      AOS.refresh();
+    }
+  });
+  return (
+    <Layout>
+      <Seo title="Home" />
+      <Container id="logo">
+        <Col>
+          <StaticImage
+            src="../images/mediacao-subtitulo.png"
+            quality={95}
+            width={600}
+            alt="A Gatsby astronaut"
+            placeholder="blurred"
+          />
+        </Col>
+      </Container>
+    </Layout>
+  );
+};
 
 export default IndexPage;
