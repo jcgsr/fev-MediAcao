@@ -8,6 +8,8 @@ import Card from "react-bootstrap/Card";
 import { Image } from "react-bootstrap";
 
 import pessoas3 from "../images/pessoas/pessoas3.jpg";
+
+import { StaticImage } from "gatsby-plugin-image";
 import AOS from "aos";
 
 const CargaHoraria = () => {
@@ -32,7 +34,37 @@ const CargaHoraria = () => {
     <Layout>
       <Seo title="Carga Horária" />
       <h1>carga horária</h1>
-      <Card>
+      <article className="card-body">
+        <StaticImage
+          src="../images/pessoas/pessoas3.jpg"
+          layout="constrained"
+          placeholder="blurred"
+          alt="Camylle ao telefone"
+          width={700}
+          height={500}
+          // className="animate__animated animate__zoomIn"
+        />
+        <p data-aos="zoom-in">
+          A Equipe Mediação trabalha com uma carga horaria de 20 horas semanais.
+          Por isso, sempre em seleções de currículos para vagas de novos AT’s,
+          enfatizamos a necessidade de disponibilidade entre os dois turnos
+          (manhã/tarde).
+        </p>
+        <p data-aos="zoom-in">
+          Essas 20 horas semanais são distribuídas entre os atendimentos dos
+          pacientes (principal e secundário) além das responsabilidades internas
+          da Equipe. São elas:
+        </p>
+        <p data-aos="zoom-in">
+          <ul>
+            <li>Participação das reuniões;</li>
+            <li>Participação nos núcleos da equipe;</li>
+            <li>Participação nas aulas oferecidas de formação continuada;</li>
+            <li>Entrega de protocolos internos dos pacientes.</li>
+          </ul>
+        </p>
+      </article>
+      {/* <Card>
         <Card.Body>
           <Card.Title className="mb-2">
             <Card.Img
@@ -69,7 +101,7 @@ const CargaHoraria = () => {
             </p>
           </Card.Text>
         </Card.Body>
-      </Card>
+      </Card> */}
     </Layout>
   );
 };

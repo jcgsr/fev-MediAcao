@@ -7,6 +7,7 @@ import Card from "react-bootstrap/Card";
 import { Image } from "react-bootstrap";
 
 import pessoas5 from "../images/pessoas/pessoas5.jpg";
+import { StaticImage } from "gatsby-plugin-image";
 import AOS from "aos";
 
 const About = () => {
@@ -31,7 +32,67 @@ const About = () => {
     <Layout>
       <Seo title="Sobre" />
       <h1>quem somos</h1>
-      <Card>
+      <article className="card-body">
+        <StaticImage
+          src="../images/pessoas/pessoas5.jpg"
+          layout="constrained"
+          placeholder="blurred"
+          alt="Camylle ao telefone"
+          width={700}
+          height={500}
+          // className="animate__animated animate__zoomIn"
+        />
+        <p data-aos="zoom-in">
+          A
+          <strong>
+            <i> Equipe Mediação</i>
+          </strong>{" "}
+          é formada por um grupo de psicólogas (os) e estudantes de psicologia
+          em formação. Tem como diretora a psicóloga infantil e analista do
+          comportamento{" "}
+          <a href="https://www.camylleazevedo.com.br/">Camylle Azevedo</a> e
+          atualmente é composta por 3 psicólogas/supervisoras, 13 acompanhantes
+          terapêuticos e 3 analistas responsáveis pelo suporte da equipe. Dentro
+          da equipe, trabalhamos com supervisões e atendimentos
+          (domiciliar/escolar) de terapia intensiva para crianças com atrasos ou
+          transtornos do desenvolvimento.{" "}
+        </p>
+        <p data-aos="zoom-in">
+          As supervisões são realizadas pelas psicólogas da{" "}
+          <strong>
+            <i>Equipe Mediação</i>
+          </strong>
+          {""}e os atendimentos feitos diariamente pelos estagiários de
+          psicologia, que atuam como acompanhante terapêutico da criança,
+          aplicando a ciência ABA (Análise do Comportamento Aplicada) como base
+          para seu trabalho. Possuímos, dentro da equipe, uma formação
+          continuada para nossos estagiários a fim de que aprimorem a teoria e a
+          prática dentro de seu contexto, seja ele escolar ou domiciliar. Além
+          disso, também existe um trabalho interno que se divide em núcleos para
+          um bom funcionamento e mantimento da organização interna da{" "}
+          <strong>
+            <i>Equipe</i>
+          </strong>
+          .{" "}
+        </p>
+        <p data-aos="zoom-in">
+          A{" "}
+          <strong>
+            <i>Equipe Mediação</i>
+          </strong>{" "}
+          tem como ideal o acolher para desenvolver. Acreditamos que um
+          acolhimento de qualidade é essencial para o desenvolvimento, não só
+          das crianças, mas de toda a equipe, como a família da criança, as
+          pessoas que participam de sua vida e os outros profissionais que
+          trabalham com ela. Ademais, visamos para os nossos membros de equipe,
+          um crescimento profissional de qualidade, através do nosso plano de
+          carreira que vai desde o AT (acompanhante terapêutico) até
+          Coordenador. Por fim, prezamos sempre e essencialmente pela
+          comunicação interna/externa da Equipe e a temos como um ponto
+          fortíssimo em nosso trabalho.
+        </p>
+      </article>
+      {/* <Card>
         <Card.Body>
           <Card.Title className="mb-2">
             <Card.Img
@@ -97,7 +158,7 @@ const About = () => {
             </p>
           </Card.Text>
         </Card.Body>
-      </Card>
+      </Card> */}
     </Layout>
   );
 };

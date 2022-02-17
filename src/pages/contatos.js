@@ -12,7 +12,27 @@ const Contatos = () => (
   <Layout>
     <Seo title="Fale conosco" />
     <h1>fale conosco</h1>
-    <Card>
+    <article className="card-body">
+      <h3>
+        {" "}
+        <MdOutlineMailOutline />
+      </h3>
+      <p>E-mail para contato da Equipe Mediação:</p>
+      <p>
+        <a href="mailto:suporte.equipemediacao@gmail.com">
+          suporte.equipemediacao@gmail.com
+        </a>
+      </p>
+      <hr />
+      <h3>
+        <GrInstagram />
+      </h3>
+      <p>Instagram da Equipe:</p>
+      <p>
+        <a href="https://www.instagram.com/equipemediacao/"> @equipemediacao</a>
+      </p>
+    </article>
+    {/* <Card>
       <Card.Body>
         <Card.Title>
           <MdOutlineMailOutline />
@@ -40,7 +60,7 @@ const Contatos = () => (
           </p>
         </Card.Text>
       </Card.Body>
-    </Card>
+    </Card> */}
   </Layout>
 );
 

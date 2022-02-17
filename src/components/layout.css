@@ -113,7 +113,6 @@ body {
   font-family: var(--ff);
   font-size: var(--defaultFontSize);
   line-height: var(--lh);
-  max-width: 72ch;
 }
 @media only screen and (max-width: 456px) {
   .card {
@@ -121,14 +120,23 @@ body {
   }
 }
 .card-body {
+  width: 75%;
+  margin: 1rem auto;
+  padding: 1rem;
   background-color: var(--secondary);
   border-radius: var(--borderRadius);
   color: var(--terciary);
   box-shadow: var(--shadow-3);
   font-family: var(--ff);
+  font-size: var(--defaultFontSize);
+  max-width: 72ch;
 }
 .card-body a {
   color: var(--terciary);
+}
+
+.card-body p {
+  margin-top: 1rem;
 }
 
 .navbar-toggler {
@@ -168,3 +176,6 @@ footer {
   text-align: center;
 }
 /* ids */
+/* classes */
+
+/* classes */
