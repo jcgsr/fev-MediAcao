@@ -131,6 +131,11 @@ body {
   font-size: var(--defaultFontSize);
   max-width: 72ch;
 }
+@media only screen and (max-width: 456px) {
+  .card-body {
+    width: 90%;
+  }
+}
 .card-body a {
   color: var(--terciary);
 }
