@@ -32,7 +32,7 @@ const Avaliacao = () => {
   return (
     <Layout>
       <Seo title="Avaliação" />
-      <h1>avaliação</h1>
+      <h1 className="animate__animated animate__zoomIn">avaliação</h1>
       <article className="card-body">
         <StaticImage
           src="../images/pessoas/pessoas2.jpg"
@@ -41,7 +41,6 @@ const Avaliacao = () => {
           alt="Camylle ao telefone"
           width={700}
           height={500}
-          // className="animate__animated animate__zoomIn"
         />
         <p data-aos="zoom-in">
           A avaliação é realizada através dos princípios da Análise do

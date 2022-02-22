@@ -33,7 +33,7 @@ const CargaHoraria = () => {
   return (
     <Layout>
       <Seo title="Carga Horária" />
-      <h1>carga horária</h1>
+      <h1 className="animate__animated animate__zoomIn">carga horária</h1>
       <article className="card-body">
         <StaticImage
           src="../images/pessoas/pessoas3.jpg"

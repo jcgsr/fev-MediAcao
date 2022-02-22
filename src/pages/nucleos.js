@@ -32,7 +32,7 @@ const Nucleos = () => {
   return (
     <Layout>
       <Seo title="Núcleos" />
-      <h1>núcleos</h1>
+      <h1 className="animate__animated animate__zoomIn">núcleos</h1>
       <article className="card-body">
         <StaticImage
           src="../images/pessoas/pessoa4.jpg"

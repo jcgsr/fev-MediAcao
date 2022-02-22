@@ -72,7 +72,7 @@ body {
   --transition: 0.3s ease-in-out all;
   --max-width: 1120px;
   --fixed-width: 600px;
-  --ff: Verdana, Geneva, sans-serif;
+  --ff: Arial, Helvetica, sans-serif;
   --lh: 1.618;
 }
 
@@ -182,5 +182,7 @@ footer {
 }
 /* ids */
 /* classes */
-
+.carousel {
+  margin-bottom: 2rem;
+}
 /* classes */

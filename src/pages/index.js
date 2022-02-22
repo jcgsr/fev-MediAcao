@@ -2,7 +2,8 @@
 // Chegamos ontem de viagem do Rio. Eu com bastante catarro, ouvidos entupidos, moco moco, Susi amolecendo e Diana tb.
 
 import React, { useEffect } from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import { graphql } from "gatsby";
+import { StaticImage, GatsbyImage } from "gatsby-plugin-image";
 
 import Layout from "../components/layout";
 import Seo from "../components/seo";
@@ -14,8 +15,9 @@ import AOS from "aos";
 
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
+import Carousel from "react-bootstrap/Carousel";
 
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
   useEffect(() => {
     /**
      * Server-side rendering does not provide the 'document' object
@@ -46,9 +48,42 @@ const IndexPage = () => {
             placeholder="blurred"
           />
         </Col>
+        <Carousel className="carousel">
+          {data.slideShow.edges.map(({ node }) => (
+            <Carousel.Item key={node.id}>
+              <GatsbyImage
+                image={node.childImageSharp.gatsbyImageData}
+                alt={node.base.split("-").join(" ").split(".")[0]}
+              />
+            </Carousel.Item>
+          ))}
+        </Carousel>
       </Container>
     </Layout>
   );
 };
 
 export default IndexPage;
+
+export const pageQuery = graphql`
+  query {
+    slideShow: allFile(filter: { relativeDirectory: { eq: "pessoas" } }) {
+      edges {
+        node {
+          id
+          relativePath
+          base
+          childImageSharp {
+            gatsbyImageData(
+              placeholder: BLURRED
+              height: 900
+              width: 900
+              quality: 70
+              transformOptions: { cropFocus: CENTER, fit: COVER }
+            )
+          }
+        }
+      }
+    }
+  }
+`;

@@ -32,7 +32,7 @@ const Supervisao = () => {
   return (
     <Layout>
       <Seo title="Supervisão" />
-      <h1>supervisão</h1>
+      <h1 className="animate__animated animate__zoomIn">supervisão</h1>
       <article className="card-body">
         <StaticImage
           src="../images/pessoas/camylle.jpeg"

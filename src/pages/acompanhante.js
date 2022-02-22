@@ -33,7 +33,9 @@ const Acompanhante = () => {
   return (
     <Layout>
       <Seo title="Acompanhante Domiciliar/Escolar" />
-      <h1>Acompanhante Domiciliar/Escolar</h1>
+      <h1 className="animate__animated animate__zoomIn">
+        Acompanhante Domiciliar/Escolar
+      </h1>
       <article className="card-body">
         <StaticImage
           src="../images/pessoas/pessoa2.jpg"

@@ -6,7 +6,6 @@ import Card from "react-bootstrap/Card";
 
 import { Image } from "react-bootstrap";
 
-import pessoas5 from "../images/pessoas/pessoas5.jpg";
 import { StaticImage } from "gatsby-plugin-image";
 import AOS from "aos";
 
@@ -31,7 +30,8 @@ const About = () => {
   return (
     <Layout>
       <Seo title="Sobre" />
-      <h1>quem somos</h1>
+
+      <h1 className="animate__animated animate__zoomIn">quem somos</h1>
       <article className="card-body">
         <StaticImage
           src="../images/pessoas/pessoas5.jpg"
@@ -40,7 +40,6 @@ const About = () => {
           alt="Camylle ao telefone"
           width={700}
           height={500}
-          // className="animate__animated animate__zoomIn"
         />
         <p data-aos="zoom-in">
           A

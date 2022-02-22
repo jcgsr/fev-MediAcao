@@ -11,7 +11,7 @@ import { GrInstagram } from "react-icons/gr";
 const Contatos = () => (
   <Layout>
     <Seo title="Fale conosco" />
-    <h1>fale conosco</h1>
+    <h1 className="animate__animated animate__zoomIn">fale conosco</h1>
     <article className="card-body">
       <h3>
         {" "}
