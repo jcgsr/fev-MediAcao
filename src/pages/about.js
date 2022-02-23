@@ -28,7 +28,7 @@ const About = () => {
           src="../images/pessoas/pessoas5.jpg"
           layout="constrained"
           placeholder="blurred"
-          alt="Camylle ao telefone"
+          alt="Camylle palestrando"
           width={700}
           height={500}
         />

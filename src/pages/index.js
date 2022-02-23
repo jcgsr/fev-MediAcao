@@ -2,7 +2,7 @@
 // Chegamos ontem de viagem do Rio. Eu com bastante catarro, ouvidos entupidos, moco moco, Susi amolecendo e Diana tb.
 
 import React, { useEffect } from "react";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import { StaticImage, GatsbyImage } from "gatsby-plugin-image";
 
 import Layout from "../components/layout";
@@ -19,9 +19,10 @@ import Col from "react-bootstrap/Col";
 import Carousel from "react-bootstrap/Carousel";
 
 // components
+import Equipe from "../components/equipe";
+import Acompanhante from "../components/acompanhante";
 import Aba from "../components/aba";
-import Avaliacao from "../components/avaliacao";
-
+import Contatos from "../components/contatos";
 const IndexPage = ({ data }) => {
   useEffect(() => {
     const AOS = require("aos");
@@ -61,8 +62,10 @@ const IndexPage = ({ data }) => {
           ))}
         </Carousel>
       </Container>
+      <Equipe />
       <Aba />
-      <Avaliacao />
+      <Acompanhante />
+      <Contatos />
     </Layout>
   );
 };

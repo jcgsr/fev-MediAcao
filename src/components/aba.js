@@ -1,9 +1,11 @@
 import React, { useEffect } from "react";
 import { Link } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
+import Container from "react-bootstrap/Container";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
 
 import AOS from "aos";
-const Aba = () => {
+const Equipe = () => {
   useEffect(() => {
     const AOS = require("aos");
     AOS.init({
@@ -17,26 +19,59 @@ const Aba = () => {
     }
   });
   return (
-    <section className="home">
-      <StaticImage
-        src="../images/pessoas/pessoas5.jpg"
-        quality={95}
-        className="bg-img"
-        alt="Logo da equipe Mediação"
-        placeholder="blurred"
-      />
-      <Link to="/about" className="btn bottom-left " data-aos="fade-right">
-        <h2>Quem Somos</h2>
-      </Link>
-      <Link
-        to="/aba"
-        className="btn bottom-right animate__bounceInLeft"
-        data-aos="fade-left"
-      >
-        <h2>Intervenção ABA</h2>
-      </Link>
+    <section className="container-aba">
+      <Container fluid>
+        <Row className="mb-4" xs={1} md={2} sm={2}>
+          <Col className="mb-4">
+            <article>
+              <Link to="/aba">
+                <h3>ABA</h3>
+                <p>
+                  Tem como objetivo implementar comportamentos socialmente
+                  relevantes e adequado nas pessoas.
+                </p>
+              </Link>
+            </article>
+          </Col>
+          <Col>
+            <article>
+              <Link to="/avaliacao">
+                <h3>Avaliação</h3>
+                <p>
+                  Envolve a observação da criança nos seus ambientes naturais,
+                  além do consultório.
+                </p>
+              </Link>
+            </article>
+          </Col>
+        </Row>
+        <Row xs={1} md={2} sm={2}>
+          <Col className="mb-4">
+            <article>
+              <Link to="/carga-horaria">
+                <h3>carga horária</h3>
+                <p>
+                  20 horas semanais distribuídas entre os atendimentos dos
+                  pacientes (principal e secundário).
+                </p>
+              </Link>
+            </article>
+          </Col>
+          <Col>
+            <article>
+              <Link to="/nucleos">
+                <h3>núcleos</h3>
+                <p>
+                  Trabalho interno que se divide em seis Núcleos para um bom
+                  funcionamento interno.
+                </p>
+              </Link>
+            </article>
+          </Col>
+        </Row>
+      </Container>
     </section>
   );
 };
 
-export default Aba;
+export default Equipe;

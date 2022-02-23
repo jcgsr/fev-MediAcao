@@ -3,22 +3,11 @@ import React, { useEffect } from "react";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 
-import Card from "react-bootstrap/Card";
-
-import { Image } from "react-bootstrap";
-
-import pessoa2 from "../images/pessoas/pessoa2.jpg";
-
 import { StaticImage } from "gatsby-plugin-image";
 import AOS from "aos";
 
 const Acompanhante = () => {
   useEffect(() => {
-    /**
-     * Server-side rendering does not provide the 'document' object
-     * therefore this import is required either in useEffect or componentDidMount as they
-     * are exclusively executed on a client
-     */
     const AOS = require("aos");
     AOS.init({
       once: true,
@@ -38,14 +27,20 @@ const Acompanhante = () => {
       </h1>
       <article className="card-body">
         <StaticImage
-          src="../images/pessoas/pessoa2.jpg"
+          src="../images/img/acompanhante.jpg"
           layout="constrained"
           placeholder="blurred"
-          alt="Camylle ao telefone"
+          alt="Foto de acompanhante"
           width={700}
           height={500}
           // className="animate__animated animate__zoomIn"
         />
+        <a
+          href="https://www.pexels.com/pt-br/foto/adoravel-encantador-cativante-animal-7210698/"
+          className="fotos"
+        >
+          Foto de Blue Bird no Pexels
+        </a>
         <p data-aos="zoom-in">
           Dentro da{" "}
           <strong>

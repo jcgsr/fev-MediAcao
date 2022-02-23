@@ -3,22 +3,11 @@ import React, { useEffect } from "react";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 
-import Card from "react-bootstrap/Card";
-
-import { Image } from "react-bootstrap";
-
-import pessoas3 from "../images/pessoas/pessoas3.jpg";
-
 import { StaticImage } from "gatsby-plugin-image";
 import AOS from "aos";
 
 const CargaHoraria = () => {
   useEffect(() => {
-    /**
-     * Server-side rendering does not provide the 'document' object
-     * therefore this import is required either in useEffect or componentDidMount as they
-     * are exclusively executed on a client
-     */
     const AOS = require("aos");
     AOS.init({
       once: true,
@@ -36,14 +25,19 @@ const CargaHoraria = () => {
       <h1 className="animate__animated animate__zoomIn">carga horária</h1>
       <article className="card-body">
         <StaticImage
-          src="../images/pessoas/pessoas3.jpg"
+          src="../images/img/time.jpg"
           layout="constrained"
           placeholder="blurred"
-          alt="Camylle ao telefone"
+          alt="Foto de um relógio de areia"
           width={700}
           height={500}
-          // className="animate__animated animate__zoomIn"
         />
+        <a
+          href="https://www.pexels.com/pt-br/foto/close-vista-de-perto-contagem-regressiva-ampulheta-6676154/"
+          className="fotos"
+        >
+          Foto de Yahya Hasan no Pexels
+        </a>
         <p data-aos="zoom-in">
           A Equipe Mediação trabalha com uma carga horaria de 20 horas semanais.
           Por isso, sempre em seleções de currículos para vagas de novos AT’s,

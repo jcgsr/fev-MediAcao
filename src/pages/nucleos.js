@@ -3,21 +3,11 @@ import React, { useEffect } from "react";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 
-import Card from "react-bootstrap/Card";
-
-import { Image } from "react-bootstrap";
-
-import pessoa4 from "../images/pessoas/pessoa4.jpg";
 import { StaticImage } from "gatsby-plugin-image";
 import AOS from "aos";
 
 const Nucleos = () => {
   useEffect(() => {
-    /**
-     * Server-side rendering does not provide the 'document' object
-     * therefore this import is required either in useEffect or componentDidMount as they
-     * are exclusively executed on a client
-     */
     const AOS = require("aos");
     AOS.init({
       once: true,
@@ -35,14 +25,19 @@ const Nucleos = () => {
       <h1 className="animate__animated animate__zoomIn">núcleos</h1>
       <article className="card-body">
         <StaticImage
-          src="../images/pessoas/pessoa4.jpg"
+          src="../images/img/puzzle.jpg"
           layout="constrained"
           placeholder="blurred"
-          alt="Camylle ao telefone"
+          alt="Foto de um quebra-cabeça"
           width={700}
           height={500}
-          // className="animate__animated animate__zoomIn"
         />
+        <a
+          href="https://www.pexels.com/pt-br/foto/conceitual-abstrato-maos-segurando-6147357/"
+          className="fotos"
+        >
+          Foto de Diva Plavalaguna no Pexels
+        </a>
         <p data-aos="zoom-in">
           Na{" "}
           <strong>

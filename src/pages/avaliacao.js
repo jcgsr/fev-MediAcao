@@ -3,21 +3,12 @@ import React, { useEffect } from "react";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 
-import Card from "react-bootstrap/Card";
-
-import { Image } from "react-bootstrap";
 import { StaticImage } from "gatsby-plugin-image";
-import pessoas2 from "../images/pessoas/pessoas2.jpg";
 
 import AOS from "aos";
 
 const Avaliacao = () => {
   useEffect(() => {
-    /**
-     * Server-side rendering does not provide the 'document' object
-     * therefore this import is required either in useEffect or componentDidMount as they
-     * are exclusively executed on a client
-     */
     const AOS = require("aos");
     AOS.init({
       once: true,
@@ -35,13 +26,19 @@ const Avaliacao = () => {
       <h1 className="animate__animated animate__zoomIn">avaliação</h1>
       <article className="card-body">
         <StaticImage
-          src="../images/pessoas/pessoas2.jpg"
+          src="../images/img/avaliacao.jpg"
           layout="constrained"
           placeholder="blurred"
-          alt="Camylle ao telefone"
+          alt="Foto de avaliação"
           width={700}
           height={500}
         />
+        <a
+          href="https://pixabay.com/photos/smileys-customer-satisfaction-review-5617876/"
+          className="fotos"
+        >
+          Foto de Tumisu no Pixabay
+        </a>
         <p data-aos="zoom-in">
           A avaliação é realizada através dos princípios da Análise do
           Comportamento e envolve a observação da criança nos seus ambientes
