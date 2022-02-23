@@ -39,10 +39,9 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <Seo title="Home" />
+      <Equipe />
       <Container id="logo">
         <Col>
-          <Acompanhante />
-
           <StaticImage
             src="../images/mediacao-subtitulo.png"
             quality={95}
@@ -64,7 +63,8 @@ const IndexPage = ({ data }) => {
           ))}
         </Carousel>*/}
       </Container>
-      <Equipe />
+      <Acompanhante />
+
       <Aba />
       <Contatos />
     </Layout>
