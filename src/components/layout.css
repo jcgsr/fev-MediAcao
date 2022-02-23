@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 /* RESET */
 *,
 ::after,
@@ -73,7 +74,9 @@ body {
   --max-width: 1120px;
   --fixed-width: 600px;
   --ff: Arial, Helvetica, sans-serif;
+  --ff2: "Pacifico", cursive;
   --lh: 1.618;
+  --transition: 0.3s ease-in-out all;
 }
 
 .card-img-top {
@@ -88,6 +91,7 @@ body {
   border-color: var(--primary) !important;
   color: var(--terciary);
   font-family: var(--ff);
+  transition: var(--transition) !important;
 }
 .btn-primary:hover,
 .btn:hover {
@@ -165,7 +169,15 @@ h1 {
   color: var(--secondary);
   text-transform: capitalize;
   text-shadow: var(--shadowT-3);
-  font-family: var(--ff);
+  font-family: var(--ff2);
+  font-size: 5rem;
+}
+h2 {
+  color: var(--terciary);
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: var(--ff2);
+  font-size: 5rem;
 }
 footer {
   background-color: var(--primary);
@@ -180,9 +192,44 @@ footer {
 #logo {
   text-align: center;
 }
+.home {
+  width: 100%;
+  text-align: center;
+  background-color: var(--primary);
+  text-align: center;
+  position: relative;
+}
+.home a {
+  opacity: 0.8;
+  color: var(--primaryB);
+}
 /* ids */
 /* classes */
 .carousel {
   margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.bg-img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  z-index: 0;
+  transition: var(--transition);
+}
+.bg-img:hover {
+  opacity: 1;
+  transition: var(--transition);
+}
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+}
+/* Bottom left text */
+.bottom-right {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
 }
 /* classes */

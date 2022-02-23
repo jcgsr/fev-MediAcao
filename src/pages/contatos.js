@@ -3,8 +3,6 @@ import * as React from "react";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 
-import Card from "react-bootstrap/Card";
-
 import { MdOutlineMailOutline } from "react-icons/md";
 import { GrInstagram } from "react-icons/gr";
 
