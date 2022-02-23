@@ -16,7 +16,7 @@ import AOS from "aos";
 // bootstrap
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
-import Carousel from "react-bootstrap/Carousel";
+// import Carousel from "react-bootstrap/Carousel";
 
 // components
 import Equipe from "../components/equipe";
@@ -41,6 +41,8 @@ const IndexPage = ({ data }) => {
       <Seo title="Home" />
       <Container id="logo">
         <Col>
+          <Acompanhante />
+
           <StaticImage
             src="../images/mediacao-subtitulo.png"
             quality={95}
@@ -51,7 +53,7 @@ const IndexPage = ({ data }) => {
           />
         </Col>
 
-        <Carousel className="carousel">
+        {/* <Carousel className="carousel">
           {data.slideShow.edges.map(({ node }) => (
             <Carousel.Item key={node.id}>
               <GatsbyImage
@@ -60,11 +62,10 @@ const IndexPage = ({ data }) => {
               />
             </Carousel.Item>
           ))}
-        </Carousel>
+        </Carousel>*/}
       </Container>
       <Equipe />
       <Aba />
-      <Acompanhante />
       <Contatos />
     </Layout>
   );
