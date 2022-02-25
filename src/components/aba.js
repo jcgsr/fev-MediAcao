@@ -4,6 +4,8 @@ import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
+import { motion } from "framer-motion";
+
 import AOS from "aos";
 const Equipe = () => {
   useEffect(() => {
@@ -23,7 +25,12 @@ const Equipe = () => {
       <Container fluid>
         <Row className="mb-4" xs={1} md={2} sm={2}>
           <Col className="mb-4">
-            <article>
+            <motion.article
+              whileHover={{
+                scale: 1.1,
+                transition: { duration: 0.3 },
+              }}
+            >
               <Link to="/aba">
                 <h3>ABA</h3>
                 <p>
@@ -31,10 +38,15 @@ const Equipe = () => {
                   relevantes e adequado nas pessoas.
                 </p>
               </Link>
-            </article>
+            </motion.article>
           </Col>
           <Col>
-            <article>
+            <motion.article
+              whileHover={{
+                scale: 1.1,
+                transition: { duration: 0.3 },
+              }}
+            >
               <Link to="/avaliacao">
                 <h3>Avaliação</h3>
                 <p>
@@ -42,12 +54,17 @@ const Equipe = () => {
                   além do consultório.
                 </p>
               </Link>
-            </article>
+            </motion.article>
           </Col>
         </Row>
         <Row xs={1} md={2} sm={2}>
           <Col className="mb-4">
-            <article>
+            <motion.article
+              whileHover={{
+                scale: 1.1,
+                transition: { duration: 0.3 },
+              }}
+            >
               <Link to="/carga-horaria">
                 <h3>carga horária</h3>
                 <p>
@@ -55,10 +72,15 @@ const Equipe = () => {
                   pacientes (principal e secundário).
                 </p>
               </Link>
-            </article>
+            </motion.article>
           </Col>
           <Col>
-            <article>
+            <motion.article
+              whileHover={{
+                scale: 1.1,
+                transition: { duration: 0.3 },
+              }}
+            >
               <Link to="/nucleos">
                 <h3>núcleos</h3>
                 <p>
@@ -66,7 +88,7 @@ const Equipe = () => {
                   funcionamento interno.
                 </p>
               </Link>
-            </article>
+            </motion.article>
           </Col>
         </Row>
       </Container>

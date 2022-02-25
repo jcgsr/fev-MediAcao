@@ -8,6 +8,8 @@ import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
+import { motion } from "framer-motion";
+
 import AOS from "aos";
 const Contatos = () => {
   useEffect(() => {
@@ -31,20 +33,30 @@ const Contatos = () => {
         <Row className="mb-4" xs={1} md={2} sm={2}>
           <Col className="mb-4">
             <div>
-              <p>
+              <motion.p
+                whileHover={{
+                  scale: 1.5,
+                  transition: { duration: 0.3 },
+                }}
+              >
                 <a href="mailto:suporte.equipemediacao@gmail.com">
                   <MdOutlineMailOutline />
                 </a>
-              </p>
+              </motion.p>
             </div>
           </Col>
           <Col>
             <div>
-              <p>
+              <motion.p
+                whileHover={{
+                  scale: 1.5,
+                  transition: { duration: 0.3 },
+                }}
+              >
                 <a href="https://www.instagram.com/equipemediacao/">
                   <GrInstagram />
                 </a>
-              </p>
+              </motion.p>
             </div>
           </Col>
         </Row>
