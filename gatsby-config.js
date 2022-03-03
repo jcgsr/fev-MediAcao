@@ -4,7 +4,7 @@ module.exports = {
     description: `Site da Equipe Mediação. Aracaju-SE. Psicologia Infantil. ABA.`,
     author: `@teufel8`,
     siteUrl: `https://www.equipemediacao.com.br/`,
-    image: `mediacao.jpeg`,
+    image: `/mediacao.jpeg`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
