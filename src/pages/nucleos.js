@@ -25,19 +25,19 @@ const Nucleos = () => {
       <h1 className="animate__animated animate__zoomIn">núcleos</h1>
       <article className="card-body">
         <StaticImage
-          src="../images/img/puzzle.jpg"
+          src="../images/img/foto8.jpeg"
           layout="constrained"
           placeholder="blurred"
           alt="Foto de um quebra-cabeça"
           width={700}
           height={500}
         />
-        <a
+        {/* <a
           href="https://www.pexels.com/pt-br/foto/conceitual-abstrato-maos-segurando-6147357/"
           className="fotos"
         >
           Foto de Diva Plavalaguna no Pexels
-        </a>
+        </a>*/}
         <p data-aos="zoom-in">
           Na{" "}
           <strong>

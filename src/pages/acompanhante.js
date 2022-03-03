@@ -27,7 +27,7 @@ const Acompanhante = () => {
       </h1>
       <article className="card-body">
         <StaticImage
-          src="../images/img/acompanhante.jpg"
+          src="../images/img/foto6.jpeg"
           layout="constrained"
           placeholder="blurred"
           alt="Foto de acompanhante"
@@ -35,12 +35,12 @@ const Acompanhante = () => {
           height={500}
           // className="animate__animated animate__zoomIn"
         />
-        <a
+        {/* <a
           href="https://www.pexels.com/pt-br/foto/adoravel-encantador-cativante-animal-7210698/"
           className="fotos"
         >
           Foto de Blue Bird no Pexels
-        </a>
+        </a>*/}
         <p data-aos="zoom-in">
           Dentro da{" "}
           <strong>

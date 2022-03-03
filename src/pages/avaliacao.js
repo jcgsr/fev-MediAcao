@@ -26,19 +26,19 @@ const Avaliacao = () => {
       <h1 className="animate__animated animate__zoomIn">avaliação</h1>
       <article className="card-body">
         <StaticImage
-          src="../images/img/avaliacao.jpg"
+          src="../images/img/foto1.jpeg"
           layout="constrained"
           placeholder="blurred"
           alt="Foto de avaliação"
           width={700}
           height={500}
         />
-        <a
+        {/*  <a
           href="https://pixabay.com/photos/smileys-customer-satisfaction-review-5617876/"
           className="fotos"
         >
           Foto de Tumisu no Pixabay
-        </a>
+        </a>*/}
         <p data-aos="zoom-in">
           A avaliação é realizada através dos princípios da Análise do
           Comportamento e envolve a observação da criança nos seus ambientes

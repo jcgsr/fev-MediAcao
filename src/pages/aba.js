@@ -27,7 +27,7 @@ const Aba = () => {
       </h1>
       <article className="card-body">
         <StaticImage
-          src="../images/img/ABA.png"
+          src="../images/img/foto3.jpeg"
           layout="constrained"
           placeholder="blurred"
           alt="Terapia ABA"

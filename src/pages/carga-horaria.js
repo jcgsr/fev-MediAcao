@@ -25,19 +25,19 @@ const CargaHoraria = () => {
       <h1 className="animate__animated animate__zoomIn">carga horária</h1>
       <article className="card-body">
         <StaticImage
-          src="../images/img/time.jpg"
+          src="../images/img/foto4.jpeg"
           layout="constrained"
           placeholder="blurred"
           alt="Foto de um relógio de areia"
           width={700}
           height={500}
         />
-        <a
+        {/* <a
           href="https://www.pexels.com/pt-br/foto/close-vista-de-perto-contagem-regressiva-ampulheta-6676154/"
           className="fotos"
         >
           Foto de Yahya Hasan no Pexels
-        </a>
+        </a>*/}
         <p data-aos="zoom-in">
           A Equipe Mediação trabalha com uma carga horaria de 20 horas semanais.
           Por isso, sempre em seleções de currículos para vagas de novos AT’s,
