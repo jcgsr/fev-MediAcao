@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `Mediação`,
-    description: `Site da Equipe de Intervenção Intensiva ABA: Mediação`,
+    description: `Site da Equipe Mediação`,
     author: `@teufel8`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    siteUrl: `http://www.equipemediacao.com.br/`,
+    image: `/mediacao.jpg`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
