@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `Mediação`,
-    description: `Site da Equipe Mediação`,
+    description: `Site da Equipe Mediação. Aracaju-SE. Psicologia Infantil. ABA.`,
     author: `@teufel8`,
-    siteUrl: `http://www.equipemediacao.com.br/`,
-    image: `/mediacao.jpg`,
+    siteUrl: `https://www.equipemediacao.com.br/`,
+    image: `mediacao.jpeg`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
