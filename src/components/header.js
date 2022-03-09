@@ -57,9 +57,6 @@ const Header = () => {
               <Nav.Link as={Link} to="/nucleos">
                 Núcleos
               </Nav.Link>
-              <Nav.Link as={Link} to="/apostila">
-                Apostila
-              </Nav.Link>
               <Nav.Link as={Link} to="/contatos">
                 Fale Conosco
               </Nav.Link>
