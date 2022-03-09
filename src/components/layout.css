@@ -233,13 +233,13 @@ footer {
   background-color: var(--fourth);
   padding: 1rem;
   color: var(--terciary);
-  opacity: 0.7;
+  opacity: 0.75;
   border-radius: var(--borderRadius);
   transition: var(--transition);
 }
 .container-aba article:hover {
   transition: var(--transition);
-
+  background-color: var(--primary);
   opacity: 1;
 }
 
@@ -300,5 +300,9 @@ p {
 .fotos {
   font-size: xx-small;
   text-decoration: none;
+}
+.btn-apostila {
+  margin: 2rem auto;
+  text-align: center;
 }
 /* classes */

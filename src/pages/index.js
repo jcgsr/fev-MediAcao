@@ -3,7 +3,7 @@
 
 import React, { useEffect } from "react";
 import { graphql } from "gatsby";
-import { StaticImage, GatsbyImage } from "gatsby-plugin-image";
+import { StaticImage } from "gatsby-plugin-image";
 
 import Layout from "../components/layout";
 import Seo from "../components/seo";

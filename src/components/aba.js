@@ -23,11 +23,11 @@ const Equipe = () => {
   return (
     <section className="container-aba">
       <Container fluid>
-        <Row className="mb-4" xs={1} md={2} sm={2}>
+        <Row className="" xs={1} md={2} sm={2}>
           <Col className="mb-4">
             <motion.article
               whileHover={{
-                scale: 1.1,
+                scale: 1.05,
                 transition: { duration: 0.3 },
               }}
             >
@@ -40,10 +40,10 @@ const Equipe = () => {
               </Link>
             </motion.article>
           </Col>
-          <Col>
+          <Col className="mb-4">
             <motion.article
               whileHover={{
-                scale: 1.1,
+                scale: 1.05,
                 transition: { duration: 0.3 },
               }}
             >
@@ -61,7 +61,7 @@ const Equipe = () => {
           <Col className="mb-4">
             <motion.article
               whileHover={{
-                scale: 1.1,
+                scale: 1.05,
                 transition: { duration: 0.3 },
               }}
             >
@@ -74,10 +74,10 @@ const Equipe = () => {
               </Link>
             </motion.article>
           </Col>
-          <Col>
+          <Col className="mb-4">
             <motion.article
               whileHover={{
-                scale: 1.1,
+                scale: 1.05,
                 transition: { duration: 0.3 },
               }}
             >
@@ -86,6 +86,40 @@ const Equipe = () => {
                 <p>
                   Trabalho interno que se divide em seis Núcleos para um bom
                   funcionamento interno.
+                </p>
+              </Link>
+            </motion.article>
+          </Col>
+        </Row>
+        <Row xs={1} md={2} sm={2}>
+          <Col className="mb-4">
+            <motion.article
+              whileHover={{
+                scale: 1.05,
+                transition: { duration: 0.3 },
+              }}
+            >
+              <Link to="/apostila">
+                <h3>apostila</h3>
+                <p>
+                  Adquire-a já para agilizar e facilitar sua intervenção no
+                  Domínio percepção visual no nível intermediário.
+                </p>
+              </Link>
+            </motion.article>
+          </Col>
+          <Col className="mb-4">
+            <motion.article
+              whileHover={{
+                scale: 1.05,
+                transition: { duration: 0.3 },
+              }}
+            >
+              <Link to="/supervisao">
+                <h3>supervisão</h3>
+                <p>
+                  São 3 psicólogas especializadas na área da análise
+                  comportamental aplicada
                 </p>
               </Link>
             </motion.article>
