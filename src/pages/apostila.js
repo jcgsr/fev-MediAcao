@@ -24,14 +24,14 @@ const Apostila = () => {
 					/>
 					<p>
 						Esta apostila foi elaborada para agilizar e facilitar a intervenção
-						do terapeuta ABA no Domínio percepção visual no nível intermediário.
+						do terapeuta ABA no DOMÍNIO PERCEPÇÃO VISUAL (nível intermediário).
 					</p>
 					<p>
-						O terapeuta terá 20 estímulos e mais de 100 imagens que poderão ser
-						impressas para trabalhar as habilidades de percepções visuais,
-						linguagem e narrativa, em uma escala de opções que oportuniza a
-						execução de 1 mês de atividades variadas com a área de
-						desenvolvimento destacada para o Marco percepção visual.
+						O terapeuta terá 20 estímulos e mais de 100 imagens, que poderão ser
+						impressas para trabalhar as habilidades de: percepção visual;
+						linguagem e narrativa. Esse material permite uma escala de opções
+						que oportuniza a execução de 1 mês de atividades variadas com a área
+						de desenvolvimento destacada para o marco percepção visual.
 					</p>
 					<p>
 						Mais comodidade e variabilidade para sua intervenção ABA em um
