@@ -17,8 +17,8 @@ const Contatos = () => (
       </h3>
       <p>E-mail para contato da Equipe Mediação:</p>
       <p>
-        <a href="mailto:suporte.equipemediacao@gmail.com">
-          suporte.equipemediacao@gmail.com
+        <a href="mailto:comercial.equipemediacao@gmail.com">
+          comercial.equipemediacao@gmail.com
         </a>
       </p>
       <hr />
