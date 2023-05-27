@@ -23,7 +23,7 @@ const Header = () => {
                 width={150}
                 height={100}
                 quality={95}
-                alt="A Gatsby astronaut"
+                alt="MediAção"
                 placeholder="blurred"
               />
             </Navbar.Brand>

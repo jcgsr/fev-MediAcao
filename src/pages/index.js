@@ -41,7 +41,7 @@ const IndexPage = ({ data }) => {
       <Seo title="Home" />
       <Equipe />
       <Container id="logo">
-        <Col>
+        {/*        <Col>
           <StaticImage
             src="../images/mediacao-subtitulo.png"
             quality={95}
@@ -50,7 +50,7 @@ const IndexPage = ({ data }) => {
             placeholder="blurred"
             className="animate__animated animate__zoomIn"
           />
-        </Col>
+ </Col> */}
 
         {/* <Carousel className="carousel">
           {data.slideShow.edges.map(({ node }) => (

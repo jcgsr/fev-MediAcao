@@ -19,7 +19,7 @@ const Equipe = () => {
   return (
     <section className="home">
       <StaticImage
-        src="../images/pessoas/pessoas5.jpg"
+        src="../images/img/people.jpg"
         quality={95}
         className="bg-img"
         alt="Logo da equipe Mediação"
