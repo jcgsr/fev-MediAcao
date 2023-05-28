@@ -25,7 +25,7 @@ const Supervisao = () => {
       <h1 className="animate__animated animate__zoomIn">supervisão</h1>
       <article className="card-body">
         <StaticImage
-          src="../images/pessoas/camylle.jpeg"
+          src="../images/img/supervisao.jpeg"
           layout="constrained"
           placeholder="blurred"
           alt="Foto de Camylle"

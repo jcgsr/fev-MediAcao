@@ -3,7 +3,7 @@
 
 import React, { useEffect } from "react";
 import { graphql } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
+// import { StaticImage } from "gatsby-plugin-image";
 
 import Layout from "../components/layout";
 import Seo from "../components/seo";
@@ -15,7 +15,7 @@ import AOS from "aos";
 
 // bootstrap
 import Container from "react-bootstrap/Container";
-import Col from "react-bootstrap/Col";
+// import Col from "react-bootstrap/Col";
 // import Carousel from "react-bootstrap/Carousel";
 
 // components

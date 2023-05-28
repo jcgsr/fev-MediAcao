@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { Link } from "gatsby";
-import video from "../images/video.mp4";
+// import video from "../images/video.mp4";
+import { StaticImage } from "gatsby-plugin-image";
+
 import AOS from "aos";
 const Acompanhante = () => {
   useEffect(() => {
@@ -17,7 +19,14 @@ const Acompanhante = () => {
   });
   return (
     <section className="home">
-      <video
+      <StaticImage
+        src="../images/img/video-replace.jpeg"
+        quality={95}
+        className="bg-img"
+        alt="Logo da equipe Mediação"
+        placeholder="blurred"
+      />
+      {/* <video
         className="video-player"
         height="100%"
         width="100%"
@@ -26,7 +35,7 @@ const Acompanhante = () => {
         autoPlay
       >
         <source src={video} type="video/mp4" />
-      </video>
+      </video> */}
       {/* <StaticImage
         src="../images/pessoas/pessoas5.jpg"
         quality={95}

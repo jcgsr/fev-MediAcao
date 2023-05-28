@@ -25,7 +25,7 @@ const About = () => {
       <h1 className="animate__animated animate__zoomIn">quem somos</h1>
       <article className="card-body">
         <StaticImage
-          src="../images/pessoas/pessoas5.jpg"
+          src="../images/img/aboutus.jpg"
           layout="constrained"
           placeholder="blurred"
           alt="Camylle palestrando"
