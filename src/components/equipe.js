@@ -25,9 +25,9 @@ const Equipe = () => {
         alt="Logo da equipe Mediação"
         placeholder="blurred"
       />
-      <Link to="/about" className="btn bottom-left ">
+      <Link to="/about" className="btn bottom-left col-10 col-sm-6 col-lg-9">
         <h3>Equipe Mediação</h3>
-        <p>
+        <p className="w-auto">
           Formada por um grupo de psicólogas(os) e estudantes de psicologia em
           formação.{" "}
         </p>

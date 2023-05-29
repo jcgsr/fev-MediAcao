@@ -18,7 +18,7 @@ const Acompanhante = () => {
     }
   });
   return (
-    <section className="home">
+    <section className="home ">
       <StaticImage
         src="../images/img/video-replace.jpeg"
         quality={95}
@@ -43,11 +43,14 @@ const Acompanhante = () => {
         alt="Logo da equipe Mediação"
         placeholder="blurred"
       /> */}
-      <Link to="/acompanhante" className="btn bottom-left">
+      <Link
+        to="/acompanhante"
+        className="btn bottom-left col-10 col-sm-6 col-lg-9"
+      >
         <h3>Acompanhante</h3>
-        <p>
+        <p className="w-auto">
           Além do acompanhamento domiciliar, também temos a possibilidade do
-          acompanhamento terapêutico no ambiente escolar{" "}
+          acompanhamento terapêutico no ambiente escolar
         </p>
       </Link>
     </section>
